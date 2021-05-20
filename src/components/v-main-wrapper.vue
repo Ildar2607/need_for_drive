@@ -1,6 +1,6 @@
 <template>
     <div class="v-main-wrapper">
-        Привет
+        Start "Need for drive"!
     </div>
 </template>
 
@@ -18,6 +18,6 @@
     }
 </script>
 
-<style>
+<style leng="sass">
 
 </style>
