@@ -6,6 +6,8 @@ module.exports = {
             }
         }
     },
-    pablicPath: '/need_for_drive/'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/my-project/'
+        : '/'
 
 }
