@@ -6,5 +6,6 @@ module.exports = {
             }
         }
     },
+    pablicPath: '/need_for_drive/'
 
 }

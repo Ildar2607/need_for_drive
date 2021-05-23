@@ -1,5 +1,6 @@
 <template>
     <v-main-wrapper/>
+    привет
 </template>
 
 <script>
