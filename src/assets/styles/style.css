@@ -50,6 +50,19 @@ textarea {
   -webkit-appearance: none;
 }
 
+.text_weight_bold {
+  font-weight: 700;
+}
+.text_weight_medium {
+  font-weight: 500;
+}
+.text_weight_regular {
+  font-weight: 400;
+}
+.text_weight_light {
+  font-weight: 300;
+}
+
 .button {
   background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
 }
@@ -69,10 +82,32 @@ textarea {
   background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
 }
 
-.v-main-wrapper {
-  background: red;
+.v-main {
   width: 100%;
-  height: 200rem;
+  height: 100vh;
+}
+.v-main__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.side-main {
+  padding: 32rem 63rem 32rem 128rem;
+  flex-basis: 50%;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+}
+.header-main__logo {
+  color: #0EC261;
+  font-size: 32rem;
+}
+.slider-main {
+  flex-basis: 50%;
+  background: #121212;
 }
 
 /*# sourceMappingURL=style.css.map */

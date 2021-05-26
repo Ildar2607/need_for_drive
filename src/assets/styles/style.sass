@@ -48,6 +48,19 @@ input
 textarea
   -webkit-appearance: none
 
+.text
+  &_weight
+    &_bold
+      font-weight: 700
+    &_medium
+      font-weight: 500
+    &_regular
+      font-weight: 400
+    &_light
+      font-weight: 300
+
+
+
 .button
   background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%)
   &:hover
@@ -63,9 +76,34 @@ textarea
 
 
 
-
-.v-main-wrapper
-  background: red
+.v-main
   width: 100%
-  height: 200rem
+  height: 100vh
+  &__wrapper
+    width: 100%
+    height: 100%
+    display: flex
+
+.side-main
+  padding: 32rem 63rem 32rem 128rem
+  flex-basis: 50%
+
+
+.header-main
+  display: flex
+  align-items: center
+  &__logo
+    color: $accent
+    font-size: 32rem
+  &__city
+
+
+
+
+.slider-main
+  flex-basis: 50%
+  background: $dark
+
+
+
 

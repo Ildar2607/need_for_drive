@@ -1,16 +1,15 @@
 <template>
-    <v-main-wrapper/>
+    <v-main></v-main>
 </template>
 
 <script>
 
-
-    import vMainWrapper from './components/v-main-wrapper'
+    import vMain from "./components/sections/v-main";
 
     export default {
         name: 'App',
         components: {
-            vMainWrapper,
+            vMain,
         },
         computed: {},
         methods: {},
