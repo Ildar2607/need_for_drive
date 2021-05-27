@@ -12,6 +12,7 @@
                         </div>
                         <div class="city__text">
                             Ульяновск
+
                         </div>
                     </div>
                 </div>
