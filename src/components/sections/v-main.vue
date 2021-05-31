@@ -1,6 +1,7 @@
 <template>
     <div class="v-main">
         <div class="v-main__wrapper">
+            <v-menu class="v-main__v-menu"/>
             <div class="v-main__side-main side-main">
                 <header class="side-main__header-main header-main">
                     <div class="header-main__logo">
@@ -29,8 +30,9 @@
                     <div class="side-main__subtitle">
                         Поминутная аренда авто твоего города
                     </div>
-                    <v-button class="v-button_size_xxl"/>
+                    <v-button class="v-button_size_xxl" name="Забронировать"/>
                 </div>
+                <v-footer class="side-main__v-footer"/>
 
             </div>
             <div class="v-main__slider-main slider-main">
@@ -42,23 +44,22 @@
 
 <script>
     import vButton from "../buttons/v-button";
+    import vMenu from "../v-menu";
     import slider from "../slider/slider";
+    import vFooter from "../v-footer";
+
     export default {
         name: "v-main",
         components: {
             vButton,
             slider,
+            vMenu,
+            vFooter,
         },
         props: {},
         data() {
             return {
                 title: '',
-                slides: [
-                    {
-                        title: "",
-                        subtitle: "",
-                    }
-                ]
             }
         },
     }

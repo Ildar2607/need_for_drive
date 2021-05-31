@@ -3,15 +3,51 @@
         <flickity class="slider__wrap" ref="flickity" :options="flickityOptions">
             <div class="slider__item">
                 <img src="../../assets/img/main-slides/1.jpg" alt="">
+                <div class="slider__text">
+                    <h2 class="slider__title text_weight_medium">
+                        Бесплатная парковка
+                    </h2>
+                    <p>
+                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
+                    </p>
+                    <v-button class="v-button_size_l" name="Подробнее"/>
+                </div>
             </div>
             <div class="slider__item">
-                <img src="../../assets/img/main-slides/1.jpg" alt="">
+                <img src="../../assets/img/main-slides/2.jpg" alt="">
+                <div class="slider__text">
+                    <h2 class="slider__title text_weight_medium">
+                        Бесплатная парковка
+                    </h2>
+                    <p>
+                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
+                    </p>
+                    <v-button class="v-button_size_l" name="Подробнее"/>
+                </div>
             </div>
             <div class="slider__item">
-                <img src="../../assets/img/main-slides/1.jpg" alt="">
+                <img src="../../assets/img/main-slides/3.jpg" alt="">
+                <div class="slider__text">
+                    <h2 class="slider__title text_weight_medium">
+                        Бесплатная парковка
+                    </h2>
+                    <p>
+                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
+                    </p>
+                    <v-button class="v-button_size_l" name="Подробнее"/>
+                </div>
             </div>
             <div class="slider__item">
-                <img src="../../assets/img/main-slides/1.jpg" alt="">
+                <img src="../../assets/img/main-slides/4.jpg" alt="">
+                <div class="slider__text">
+                    <h2 class="slider__title text_weight_medium">
+                        Бесплатная парковка
+                    </h2>
+                    <p>
+                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
+                    </p>
+                    <v-button class="v-button_size_l" name="Подробнее"/>
+                </div>
             </div>
         </flickity>
         <button class="slider__button prev" @click="previous()">
@@ -29,10 +65,11 @@
 
 <script>
     import Flickity from 'vue-flickity';
+    import VButton from "../buttons/v-button";
 
     export default {
         name: "slider",
-        components: {Flickity},
+        components: {VButton, Flickity},
         props: {},
         data() {
             return {

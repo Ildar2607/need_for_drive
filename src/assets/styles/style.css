@@ -126,6 +126,11 @@ textarea {
   height: 48rem;
   border-radius: 8rem;
 }
+.v-button_size_l {
+  width: 164rem;
+  height: 48rem;
+  border-radius: 8rem;
+}
 
 .v-main {
   width: 100%;
@@ -136,15 +141,22 @@ textarea {
   height: 100%;
   display: flex;
 }
+.v-main__v-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 .side-main {
   position: relative;
-  padding: 32rem 63rem 32rem 128rem;
+  padding: 40rem 63rem 40rem 128rem;
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .side-main__content {
   width: 100%;
-  height: 99%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,11 +175,11 @@ textarea {
   color: #999999;
   margin-bottom: 60rem;
 }
-
 .header-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 752rem;
 }
 .header-main__logo {
   color: #0EC261;
@@ -200,16 +212,6 @@ textarea {
   position: relative;
   overflow: hidden;
 }
-.slider:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  pointer-events: none;
-}
 .slider .flickity-page-dots {
   position: absolute;
   bottom: 40rem;
@@ -231,10 +233,41 @@ textarea {
   width: 100%;
   height: 100%;
 }
+.slider__item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  pointer-events: none;
+}
 .slider__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.slider__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+  z-index: 30;
+  padding: 0 96rem;
+}
+.slider__text p {
+  width: 495rem;
+  margin-bottom: 32rem;
+}
+.slider__title {
+  margin-bottom: 8rem;
+  font-size: 40px;
 }
 .slider__button {
   cursor: pointer;
@@ -243,6 +276,7 @@ textarea {
   height: 100%;
   width: 64rem;
   background: transparent;
+  font-size: 24px;
 }
 .slider__button:after {
   content: "";
@@ -275,6 +309,43 @@ textarea {
   width: 10rem;
   height: 20rem;
   z-index: 10;
+}
+
+.v-menu {
+  width: 64rem;
+  height: 100%;
+  background: #121212;
+  padding: 40rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger__open {
+  width: 32rem;
+  height: 32rem;
+}
+.burger__open svg {
+  width: 100%;
+  height: 100%;
+}
+
+.language {
+  font-size: 13rem;
+  color: #0EC261;
+}
+
+.v-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 752rem;
+}
+.v-footer__year {
+  color: #999999;
+  font-size: 13rem;
+}
+.v-footer__tel {
+  font-size: 13rem;
 }
 
 /*# sourceMappingURL=style.css.map */
