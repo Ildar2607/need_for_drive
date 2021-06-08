@@ -306,9 +306,13 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.arrow {
+  fill: none;
   width: 10rem;
   height: 20rem;
-  z-index: 10;
 }
 
 .v-menu {

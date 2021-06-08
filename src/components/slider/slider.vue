@@ -51,15 +51,23 @@
             </div>
         </flickity>
         <button class="slider__button prev" @click="previous()">
-            <svg viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 1L1 10L9 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="arrow">
+                <use xlink:href="../../assets/sprite.svg#prev"></use>
             </svg>
         </button>
         <button class="slider__button next" @click="next()">
-            <svg viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L9 10L1 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="arrow">
+                <use xlink:href="../../assets/sprite.svg#next"></use>
             </svg>
         </button>
+        <svg display="none">
+            <symbol id="next" viewBox="0 0 10 20">
+                <path d="M1 1L9 10L1 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="prev" viewBox="0 0 10 20">
+                <path d="M9 1L1 10L9 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+        </svg>
     </div>
 </template>
 
