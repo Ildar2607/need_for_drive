@@ -1,50 +1,17 @@
 <template>
     <div class="slider">
         <flickity class="slider__wrap" ref="flickity" :options="flickityOptions">
-            <div class="slider__item">
-                <img src="../../assets/img/main-slides/1.jpg" alt="">
+            <div class="slider__item"
+                 v-for="(slide, index) in slides"
+                 :key="index + 'slide'"
+            >
+                <img :src="slide.img" alt="img">
                 <div class="slider__text">
                     <h2 class="slider__title text_weight_medium">
-                        Бесплатная парковка
+                        {{slide.title}}
                     </h2>
                     <p>
-                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
-                    </p>
-                    <v-button class="v-button_size_l" name="Подробнее"/>
-                </div>
-            </div>
-            <div class="slider__item">
-                <img src="../../assets/img/main-slides/2.jpg" alt="">
-                <div class="slider__text">
-                    <h2 class="slider__title text_weight_medium">
-                        Бесплатная парковка
-                    </h2>
-                    <p>
-                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
-                    </p>
-                    <v-button class="v-button_size_l" name="Подробнее"/>
-                </div>
-            </div>
-            <div class="slider__item">
-                <img src="../../assets/img/main-slides/3.jpg" alt="">
-                <div class="slider__text">
-                    <h2 class="slider__title text_weight_medium">
-                        Бесплатная парковка
-                    </h2>
-                    <p>
-                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
-                    </p>
-                    <v-button class="v-button_size_l" name="Подробнее"/>
-                </div>
-            </div>
-            <div class="slider__item">
-                <img src="../../assets/img/main-slides/4.jpg" alt="">
-                <div class="slider__text">
-                    <h2 class="slider__title text_weight_medium">
-                        Бесплатная парковка
-                    </h2>
-                    <p>
-                        Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.
+                       {{slide.subtitle}}
                     </p>
                     <v-button class="v-button_size_l" name="Подробнее"/>
                 </div>
@@ -83,10 +50,30 @@
             return {
                 flickityOptions: {
                     prevNextButtons: false,
-                    wrapAround: true
-
-                    // any options from Flickity can be used
+                    wrapAround: true,
                 },
+                slides: [
+                    {
+                        img: "../../assets/img/main-slides/1.jpg",
+                        title: "Бесплатная парковка",
+                        subtitle: "Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.",
+                    },
+                    {
+                        img: "../../assets/img/main-slides/2.jpg",
+                        title: "Страховка",
+                        subtitle: "Полная страховка страховка автомобиля",
+                    },
+                    {
+                        img: "../../assets/img/main-slides/3.jpg",
+                        title: "Бензин",
+                        subtitle: "Полный бак на любой заправке города за наш счёт",
+                    },
+                    {
+                        img: "../../assets/img/main-slides/4.jpg",
+                        title: "Обслуживание",
+                        subtitle: "Автомобиль проходит еженедельное ТО",
+                    }
+                ]
             }
         },
         methods: {
